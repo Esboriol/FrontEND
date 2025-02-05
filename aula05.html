@@ -55,7 +55,8 @@
         </div>
     </div>
 
-    <audio id="despertador" src="audio/som.wav"></audio>
+    <audio id="despertador" src="audio/one-minute-mechanical-clock-ticking-sound-effect-253099.mp3"></audio>
+    <audio id="deses" src="audio/the-mechanical-wall-clock-ticks-one-minute-253101.mp3"></audio>
 
 </body>
 
@@ -102,13 +103,26 @@
             
             const horaMinuto = `${horas}:${minutos}`
             const alarme = document.getElementById('despertador')
+            const alerme = document.getElementById('deses')
+
+            const saberes = HA.getMinutes % 2
+
+            
 
             if (alarmesTocar[i] == horaMinuto) {
-                tocarAlarme(alarme)
+                if (HA.getMinutes() % 2 == 0) {
+                    tocarAlarme(alarme);
+                    console.log("Par")
+                } else {
+                    tocarAlarme(alerme);
+                    console.log("Impar")
+                }
             } else {
-                pararAlarme(alarme)
+                pararAlarme(alarme);
+                pararAlarme(alerme)
             }
-        }
+
+        } 
     }
 
     setInterval(verificarAlarme, 500)
