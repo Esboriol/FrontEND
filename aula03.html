@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baleles</title>
+</head>
+<body>
+    <h1>Calculo de idade</h1>
+    Nome:
+    <input type="text" id="nemes" placeholder="Digite o seu nome">
+    <br> <br>
+
+    Data de nascimento:
+    <input type="number" id="nes" placeholder="Digite a sua data de nascimento">
+    <br> <br>
+    <button type="button" onclick="CI()">Calcular</button>
+
+</body>
+
+<script>
+    function CI () {
+        const nome = document.getElementById("nemes")
+        const idade = document.getElementById("nes")
+
+        let AT = 2025 - idade.value
+        let DV = 365 * (2025 - idade.value)
+        console.log(AT)
+        alert(`${nome.value} você tem ${AT} e viveu ${DV} dias`)
+
+    }
+</script>
+
+</html>

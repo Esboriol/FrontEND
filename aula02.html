@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inveves</title>
+</head>
+<body>
+    <h1>Minha primeira Balela</h1>
+    <h2>Descobrindo a idade da pessoa pelo ano</h2>
+    <h3 id="pessooss">Seja bem vindo:</h3>
+    <h3 id="Idadessss">Sua idade atual é de:</h3>
+    <h4 id="horaaas">O total de horas vividas sua é de:</h4>
+
+</body>
+
+<script>
+
+    let nome = prompt("Olá, digite o seu nome")
+    let h3 = document.getElementById("pessooss")
+    h3.textContent = "Seja bem vindo: " + nome
+    let AN = prompt("Digite o ano que você nasceu")
+    const AT = 2025
+    const idade = AT - AN
+    let h33 = document.getElementById("Idadessss")
+    h33.textContent = "Sua idade atual é de: " + idade
+    HVV = (idade * 365) * 24
+    let h4 = document.getElementById("horaaas")
+    h4.textContent = "O total de horas vividas sua é de: " + HVV
+
+</script>
+</html>

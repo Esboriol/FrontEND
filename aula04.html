@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joges</title>
+</head>
+
+<style>
+    
+    body{
+        text-align: center;
+    }
+
+    button {
+        width: 100px;
+        height: 50px;
+        margin: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+</style>
+
+<body>
+    <button id="pa" type="button" onclick="SC(this)"></button>
+    <button id="pa" type="button" onclick="SC(this)"></button>
+    <br>
+
+    <button id="pa" type="button" onclick="SC(this)"></button>
+    <button id="pa" type="button" onclick="SC(this)"></button>
+    <br>
+
+    <button id="pa" type="button" onclick="SC(this)"></button>
+    <button id="pa" type="button" onclick="SC(this)"></button>
+    <br>
+
+    <button id="pa" type="button" onclick="SC(this)"></button>
+    <button id="pa" type="button" onclick="SC(this)"></button>
+    <br>
+
+</body>
+
+<Script>
+    function SC(botao) {
+        const cores = [
+            "blue", "red", "yellow", "green",
+            "black", "purple", "orange", "gray"
+        ]
+
+        const IS = Math.floor(Math.random() * cores.length)
+        const CS = cores[IS]
+
+        botao.style.backgroundColor = CS
+        botao.style.border = `1px solid ${CS}`
+
+        botao.textContent = CS;
+        if (["black", "purple", "gray"].includes(CS)) {
+
+            botao.style.color ="white"
+        } else {
+            botao.style.color = "black"
+        }
+
+    }
+</Script>
+
+</html>
