@@ -1,0 +1,12 @@
+
+body {
+    background-image: url('img/baixados.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+
+h1 {
+    color: rgb(8, 8, 11);
+}
